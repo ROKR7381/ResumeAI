@@ -1,0 +1,99 @@
+RoshanRoshan KumarData ScientistKOLKATA, INDIA6206194628 · roshan.kr.hit@gmail.comRoshan KumarData ScientistKOLKATA, INDIA6206194628 · roshan.kr.hit@gmail.com
+Roshan Kumar
+Data Scientist
+KOLKATA, INDIA
+6206194628 · roshan.kr.hit@gmail.com
+Roshan Kumar
+Data Scientist
+KOLKATA, INDIA
+6206194628 · roshan.kr.hit@gmail.com
+ Linkedin, Github, Tableau,
+Website-Portfolio
+Date / Place of birth
+05/03/1984, Bokaro
+Nationality
+Indian
+Skills
+Python
+Machine Learning Microsoft Power BI Generative AI, SQL
+AWS 
+Data Visualization 
+SAS VIYA SAS VDMLL
+Languages
+English Hindi
+Profile
+Working as a Data scientist at Inspira Enterprise India Ltd
+Currently Working on UCO BANK Government Project.
+Key Responsibilities:
+Model Building
+Probability of default prediction
+Data Driven Credit offers
+Single view of customer
+Employment History
+Senior Software Developer at MOL IT
+July 2025 – present
+Currently working on developing and enhancing AI-based automation tools for shipping data analytics. Key responsibilities include maintaining and improving a chatbot system that interacts with structured data to answer all shipping-related queries efficiently
+Project: Shipping Data Chatbot Developed a chatbot application that accepts structured shipment data as input and provides accurate, context-aware answers to shipping queries such as container details, ETA, and shipment tracking. Key Technologies: Python, Pandas, LLMs, Streamlet, RAG Architecture, Azure.
+DATA SCIENTIST, INSPIRA ENTERPRISE INDIA LTD, Kolkata
+April 2023 — July 2025
+Shipping Data Intelligence Chatbot Developed and deployed a Retrieval-Augmented Generation (RAG) chatbot application for shipping data analysis on Microsoft Azure. The solution combines natural language processing with domain-specific shipping data retrieval to provide intelligent responses and insights. Key technologies include RAG architecture implementation, cloud deployment on Azure infrastructure, and integration with shipping industry datasets for enhanced query accuracy and contextual responses.
+This summary highlights the technical approach (RAG), the specific domain (shipping), the deployment platform (Azure), and implies practical business value without being overly detailed for resume space constraints.
+ Built a RAG (Retrieval-Augmented Generation) based chatbot and deployed it                Streamlet for interactive user engagement.    
+Key Technologies: LLMs (e.g., GPT-4), Machine Learning, Python, Data Analytics
+Developed a machine learning model to predict the probability of default (PD) for customers with various loan types: Home Loan, Car Loan, Agriculture Loan, and MSME Loan.
+Goal: To assist financial institutions in risk assessment and decision-making.
+Deployed the model in a production environment for real-time or 
+Bengali
+Hobbies
+Web_site Development, Learning and upgrading my skills
+Handled Multicollinearity problem using Variance Inflation Factor, balanced imbalanced dataset using SMOTE.
+Trained various Classification Machine Learning models and observed Random Forest Classifier has given the best performance with 86% accuracy rate.
+Plotted ROC- AUC curve for all fitted models and saved the best model using Pickle
+Rain Prediction –Weather forecasting
+Here in this project, I have used 10 years of daily weather observations of different locations in Australia and using this dataset I have made predictions whether or not it will rain tomorrow, and the rain fall in mm. Both Classification and Regression methods applied.
+Exploratory Data Analysis steps have been followed, applied Feature Engineering to convert Date column into Year, Month and Day.
+Used Mean, Median, Mode to impute Null Values.
+Uni-variate and Bi-variate Analysis visualisations have been done using Matplotlib and Seaborn.
+Removed skewness using Power Transformer, encoded categorical columns, checked for feature correlation using Heat-map.
+Standardised data using Standard Scalar, handled multicollinearity using Variance Inflation Factor, balanced imbalanced dataset using SMOTE technique.
+Used Principal Component Analysis to reduce the dimensionality of the dataset without losing important information.
+Trained various Classification models to predict if it will rain tomorrow, compared the accuracy and cross validation score for all fitted models and Random Forest Classifier has given the best performance of 93% accuracy and 84% cross validation score.
+Checked ROC AUC curved for all classification models and chose the best one to make final prediction.
+Chose Random Forest Regressor as my best model because it has the minimum difference between training and testing score and lowest MAE, MSE, RMSE and CV scores.
+Hyper tuned Random Forest Regressor using Grid Search CV and successfully tuned my model by 1%.
+Customer churn from telecom sector.
+To predict the churning rate of a customer from telecom sector by fetching the data from different database and storing it at master database. Then
+analysing the tuples and rows and observing the trend of the data by using data visualisation tools. Splitting the data set into features and labels.
+Applying machine learning classification algorithm to predict the final outcome whether customer will churn or not and then deploying it in AWS Cloud.
+DATA SCIENTIST, SATYENDRA AGRO-FOODS PRIVATE LIMITED,
+Kolkata
+March 2018 — October 2021
+Created various sales dash board by using tableau and power bi and analysing the data for future sales in north and east zone.
+Predicting the sales of agrofood at North and east zone of bihar by applying ML algorithm.
+Connect to data and edit a data source.
+Sort, filter, and group data.
+DATA SCIENTIST, M N DASTUR CO. PVT. LTD, KALINGANAGAR, ODISHA
+March 2015 — November 2017
+Collected Data from Different Data sources using Mysql queries.
+Building Dashboards based on KPI and other indicators using visualization tools like power BI.
+Detecting the welding fault by using machine learning algorithm.
+Predicting the quantity of steels required to build the 6MTPA project.
+Senior Engineer, M N Dastur Pvt. Ltd, Kalinganagar, Odisha
+June 2011 — March 2015
+Key Responsibilities:
+Supervision of erection of the various structures and mechanical equipment.
+To maintain good quality by regular inspection before and after erection of equipment.
+To maintain all the protocols and documents for maintaining good quality.
+To check all the fittings and keep them under the tolerance level.
+To maintain all the safety norms and standard at site maintaining zero safety tolerance limit.
+Production Engineer, Petro carbon and chemicals pvt ltd, Haldia
+November 2009 — January 2011
+Inspected material prior to production to ensure authenticity and quality.
+working in Rotary kiln.
+Operation and maintenance of a rotary kiln, cooler, stack.
+.
+Education
+B. TECH, HALDIA INSTITUTE OF TECHNOLOGY, Haldia
+May 2005 — July 2009
+PG in DataScience, Data trained Education, Bengaluru
+Completed Post Graduate Diploma in Data science and Machine learning from Data trained in collaboration with IBM.
