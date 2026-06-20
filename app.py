@@ -342,40 +342,62 @@ with st.sidebar:
     st.image("https://resume.io/assets/images/logo/logo-square.png", width=60)
     st.markdown("### Configuration & Settings")
     
-    st.markdown("#### 🔑 API Credentials")
+    env_tavily = os.environ.get("TAVILY_API_KEY", "")
+    env_groq = os.environ.get("GROQ_API_KEY", "")
+    env_openai = os.environ.get("OPENAI_API_KEY", "")
     
-    # API key inputs (pre-populating from .env if present)
-    tavily_key = st.text_input("Tavily API Key", type="password", 
-                               value=st.session_state.get("tavily_key", os.environ.get("TAVILY_API_KEY", "")),
-                               help="Required for web search enrichment.")
-    groq_key = st.text_input("Groq API Key (Primary LLM)", type="password", 
-                             value=st.session_state.get("groq_key", os.environ.get("GROQ_API_KEY", "")),
-                             help="Runs Llama-3.3-70b-versatile. Recommended.")
-    openai_key = st.text_input("OpenAI API Key (Fallback LLM)", type="password", 
-                               value=st.session_state.get("openai_key", os.environ.get("OPENAI_API_KEY", "")),
-                               help="Used as fallback if Groq fails or rate limits.")
+    # Initialize keys from session state or environment defaults
+    tavily_key = st.session_state.get("tavily_key") or env_tavily
+    groq_key = st.session_state.get("groq_key") or env_groq
+    openai_key = st.session_state.get("openai_key") or env_openai
     
-    # Save keys in session state
     st.session_state["tavily_key"] = tavily_key
     st.session_state["groq_key"] = groq_key
     st.session_state["openai_key"] = openai_key
     
-    # Status Indicators
-    st.markdown("#### ⚡ Connection Status")
-    if groq_key:
-        st.markdown("🟢 **Groq LLM:** Configured")
-    else:
-        st.markdown("🔴 **Groq LLM:** Missing")
+    # If keys are defined on the backend/env, hide the manual inputs
+    if not (env_groq or env_openai):
+        st.markdown("#### 🔑 API Credentials")
+        tavily_key_input = st.text_input("Tavily API Key", type="password", 
+                                   value=tavily_key,
+                                   help="Required for web search enrichment.")
+        groq_key_input = st.text_input("Groq API Key (Primary LLM)", type="password", 
+                                 value=groq_key,
+                                 help="Runs Llama-3.3-70b-versatile. Recommended.")
+        openai_key_input = st.text_input("OpenAI API Key (Fallback LLM)", type="password", 
+                                   value=openai_key,
+                                   help="Used as fallback if Groq fails or rate limits.")
         
-    if openai_key:
-        st.markdown("🟢 **OpenAI (Fallback):** Configured")
+        # If user changed inputs, update state and local variables
+        if tavily_key_input != tavily_key:
+            st.session_state["tavily_key"] = tavily_key_input
+            tavily_key = tavily_key_input
+        if groq_key_input != groq_key:
+            st.session_state["groq_key"] = groq_key_input
+            groq_key = groq_key_input
+        if openai_key_input != openai_key:
+            st.session_state["openai_key"] = openai_key_input
+            openai_key = openai_key_input
+            
+        # Status Indicators
+        st.markdown("#### ⚡ Connection Status")
+        if groq_key:
+            st.markdown("🟢 **Groq LLM:** Configured")
+        else:
+            st.markdown("🔴 **Groq LLM:** Missing")
+            
+        if openai_key:
+            st.markdown("🟢 **OpenAI (Fallback):** Configured")
+        else:
+            st.markdown("🟡 **OpenAI (Fallback):** Missing (No Fallback)")
+            
+        if tavily_key:
+            st.markdown("🟢 **Tavily Search:** Configured")
+        else:
+            st.markdown("🔴 **Tavily Search:** Missing")
     else:
-        st.markdown("🟡 **OpenAI (Fallback):** Missing (No Fallback)")
-        
-    if tavily_key:
-        st.markdown("🟢 **Tavily Search:** Configured")
-    else:
-        st.markdown("🔴 **Tavily Search:** Missing")
+        st.markdown("#### ⚡ System Status")
+        st.markdown("🟢 **AI Services Active (Backend)**")
 
     st.markdown("---")
     
